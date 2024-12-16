@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="inputBoxes">
+            <h2>Sign In</h2>
+            <form id="signinForm">
+                <input type="text" placeholder="Email address" />
+                <input type="password" placeholder="Password" />
+                <button type="submit">Sign In</button>
+            </form>
+            <div>Don't have an account? 
+                <button onclick="redirectToSignUp()">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <script>
+       
+        document.getElementById("signinForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            alert("Sign In successful!"); 
+        });
+
+       
+        function redirectToSignUp() {
+            window.location.href = "signup.html"; 
+        }
+    </script>
+</body>
+</html>

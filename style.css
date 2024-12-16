@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+#container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; 
+}
+
+
+.inputBoxes input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.inputBoxes div {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.inputBoxes div button {
+    display: inline-block;
+    width: auto;
+    background-color: #6c757d;
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.inputBoxes div button:hover {
+    background-color: #5a6268;
+}
+
+
+@media (max-width: 768px) {
+    #container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+    input {
+        font-size: 13px;
+    }
+}
